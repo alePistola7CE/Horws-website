@@ -38,6 +38,7 @@ header {
     max-height: 600px;
     height: 600px;
     overflow: hidden;
+
     img {
     position: fixed;
     top: 0px;
@@ -52,9 +53,8 @@ header {
         width: 100%;
         }
     }
-}
 
-.name {
+    .name {
         font-size: 21px;
         position: absolute;
         top: 50px;
@@ -71,7 +71,7 @@ header {
         @media screen and (min-width: $screen-lg) {
             bottom: 50%;
         }
-    }
+      }
 
     h1, h2 {
         width: 100%;
@@ -81,17 +81,17 @@ header {
 
 
     h1 {
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 36px;
-            letter-spacing: 0.06em;
-            margin-bottom: $margin;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.06em;
+        margin-bottom: $margin;
 
-            span {
-                display: block;
+        span {
+            display: block;
 
-                @media screen and (min-width: $screen-md) {
-                    display: inline;
+            @media screen and (min-width: $screen-md) {
+                display: inline;
                 }
             }
          }
@@ -104,9 +104,101 @@ header {
         @media screen and (min-width: $screen-lg) {
             width: 100%;
             margin: 0;
-          }
-       }
+            }
+         }
 
-    .fancy-font {
-         font-family: $fancy-font;
-     }
+
+   .social {
+         position: absolute;
+         top: 55px;
+         right: 50px;
+         overflow: hidden;
+
+           a {
+             float: left;
+             width: 26px;
+             height: 26px;
+             margin: 0 5px;
+             text-indent: -9999px;
+             background: url(../images/social-sprite.png) no-repeat;
+             opacity: 0.8;
+
+             &:hover {
+                 opacity: 1.0;
+             }
+
+             @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (-min-device-pixel-ratio: 2) {
+                 background: url(../images/social-sprite@2x.png) no-repeat;
+                 background-size: 76px 26px;
+             }
+
+             &.instagram {
+                 background-position: 0px 0px;
+             }
+
+             &.facebook {
+                 background-position: -26px 0px;
+             }
+
+             &.mail {
+                 background-position: -52px 0px;
+             }
+           }
+          }
+
+}
+
+
+
+.fancy-font {
+   font-family: $fancy-font;
+}
+
+.instagram-wrap {
+    background: $lightgrey;
+}
+
+.instagram-content {
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        padding: $padding*5 0;
+        color: darken($lightgrey, 20%);
+    }
+
+    .photo-box {
+        margin: 0 0 $margin*3 0;
+
+        .image-wrap {
+            img {
+                width: 100%;
+            }
+
+            .likes {
+                position: absolute;
+                bottom: 5px;
+                left: 15px;
+                padding: $padding/2;
+                background: $black;
+                background: rgba($black, 0.4);
+                color: $white;
+            }
+        }
+        .description {
+            font-family: $sub-font;
+            font-size: 12px;
+            background: $white;
+            color: $mediumgrey;
+            letter-spacing: 1px;
+            padding: $padding*1.5;
+            height: 75px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+
+}
