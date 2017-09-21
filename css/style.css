@@ -5919,8 +5919,8 @@ header {
   overflow: hidden; }
   @media screen and (min-width: 1200px) {
     .instagram-content .photo-box {
-      width: 365px;
-      height: 365px; } }
+      width: 370px;
+      height: 340px; } }
   .instagram-content .photo-box .image-wrap {
     display: block;
     overflow: hidden; }
@@ -6020,7 +6020,7 @@ footer {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 100px;
+  padding-top: 70px;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -6039,17 +6039,18 @@ footer {
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
   max-width: 700px; }
 
 /* Caption of Modal Image */
 #caption {
   margin: auto;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 860px;
   text-align: center;
-  color: #ccc;
+  color: #FFF;
   padding: 10px 0;
   height: 150px; }
 
@@ -6083,8 +6084,9 @@ footer {
   top: 15px;
   right: 35px;
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
+  font-family: "Lato", sans-serif;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
 
@@ -6098,5 +6100,26 @@ footer {
 @media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%; } }
+@-webkit-keyframes scalaImmagine {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  to {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1); } }
+@keyframes scalaImmagine {
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1); }
+  to {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1); } }
+.photo:hover {
+  -webkit-animation-name: scalaImmagine;
+          animation-name: scalaImmagine;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s; }
 
 /*# sourceMappingURL=style.css.map */

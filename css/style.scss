@@ -200,9 +200,10 @@ header {
         overflow: hidden;
 
         @media screen and (min-width: $screen-lg){
-        width: 365px;
-        height: 365px;
-
+        //width: 365px;
+        //height: 365px;
+        width: 370px;
+        height: 340px;
         }
 
         .image-wrap {
@@ -327,7 +328,7 @@ footer {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 70px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -341,18 +342,19 @@ footer {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
     max-width: 700px;
 }
 
 /* Caption of Modal Image */
 #caption {
     margin: auto;
+    font-size: 14px;
+    font-family: $main-font;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 860px;
     text-align: center;
-    color: #ccc;
+    color: $white;
     padding: 10px 0;
     height: 150px;
 }
@@ -386,8 +388,9 @@ footer {
     top: 15px;
     right: 35px;
     color: #f1f1f1;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
+    font-family: $main-font;
     transition: 0.3s;
 }
 
@@ -403,4 +406,15 @@ footer {
     .modal-content {
         width: 100%;
     }
+}
+
+@keyframes scalaImmagine {
+  from {transform:scale(1,1);}
+    to {transform:scale(1.1,1.1);}
+}
+
+.photo:hover{
+  animation-name:scalaImmagine;
+	transform:scale(1.1,1.1);
+	animation-duration:1.3s;
 }
