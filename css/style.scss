@@ -63,7 +63,7 @@ header {
     }
 
     .name {
-        font-size: 21px;
+        font-size: 30px;
         position: absolute;
         top: 50px;
         left: 50px;
@@ -116,43 +116,57 @@ header {
          }
 
 
-   .social {
-         position: absolute;
-         top: 55px;
-         right: 50px;
-         overflow: hidden;
+         .social {
+               position: absolute;
+               top: 55px;
+               right: 50px;
+               overflow: hidden;
 
-           a {
-             float: left;
-             width: 26px;
-             height: 26px;
-             margin: 0 5px;
-             text-indent: -9999px;
-             background: url(../images/social-sprite.png) no-repeat;
-             opacity: 0.8;
+               a {
+                   float: left;
+                   width: 40px;
+                   height: 40px;
+                   margin: 0 10px;
+                   text-indent: -9999px;
+                   background: url(../images/social-sprite.png) no-repeat;
+                   background-size: 120px 40px;
+                   opacity: 0.8;
 
-             &:hover {
-                 opacity: 1.0;
-             }
+                   &:hover {
+                       opacity: 1.0;
+                   }
 
-             @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (-min-device-pixel-ratio: 2) {
-                 background: url(../images/social-sprite@2x.png) no-repeat;
-                 background-size: 76px 26px;
-             }
+                   &.instaram {
+                       background-position: 0px 0px;
+                   }
 
-             &.instagram {
-                 background-position: 0px 0px;
-             }
+                   &.foto {
+                       background-position: -40px 0px;
+                   }
 
-             &.facebook {
-                 background-position: -26px 0px;
-             }
+                   &.mail {
+                       background-position: -80px 0px;
+                   }
+               }
+               @media screen and (max-width: $screen-xs) {
+                 a{
+                   width: 30px;
+                   height: 30px;
+                   margin: 0px 7px;
+                   background-size: 90px 30px;
 
-             &.mail {
-                 background-position: -52px 0px;
-             }
-           }
-          }
+                   &.instaram{
+                     background-position: 0px 0px;
+                   }
+                   &.foto{
+                     background-position: -30px 0px;
+                   }
+                   &.mail{
+                     background-position: -61px 0px;
+                   }
+                 }
+               }
+            }
 
 }
 
