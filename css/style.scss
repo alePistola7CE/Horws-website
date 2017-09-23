@@ -418,3 +418,20 @@ footer {
 	transform:scale(1.1,1.1);
 	animation-duration:1.3s;
 }
+
+#top{
+  img{
+    width:85px;
+    opacity: 0.75;
+    &:hover{
+      opacity: 1.0;
+    }
+  }
+  text-align:center;
+  padding:5px;
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  cursor:pointer;
+  display:none;
+}

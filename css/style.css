@@ -6122,4 +6122,18 @@ footer {
   -webkit-animation-duration: 1.3s;
           animation-duration: 1.3s; }
 
+#top {
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  display: none; }
+  #top img {
+    width: 85px;
+    opacity: 0.75; }
+    #top img:hover {
+      opacity: 1.0; }
+
 /*# sourceMappingURL=style.css.map */
