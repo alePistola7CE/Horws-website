@@ -6136,4 +6136,12 @@ footer {
     #top img:hover {
       opacity: 1.0; }
 
+.nope {
+  color: #FFF;
+  text-decoration: none; }
+  .nope:hover {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer; }
+
 /*# sourceMappingURL=style.css.map */

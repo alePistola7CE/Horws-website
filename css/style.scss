@@ -435,3 +435,15 @@ footer {
   cursor:pointer;
   display:none;
 }
+
+//class for set null all of css
+.nope{
+  color: $white;
+  text-decoration: none;
+  &:hover{
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+}
