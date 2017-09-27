@@ -69,6 +69,10 @@ $(function() {
               captionText.innerHTML = this.alt;
               }
             }
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
             var moreButton = document.getElementById('more');
             if (!this.hasNext()) {
               moreButton.className = " not-allowed"
