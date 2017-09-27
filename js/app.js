@@ -1,7 +1,7 @@
 $(function() {
 
     //Set up instafeed
-    if (window.location.pathname == "/Horws-website/index.html"){
+    if (window.location.pathname == "/Horws-website/index.html" || window.location.pathname == "/Horws-website/"){
       console.log("dentro index");
       var feed = new Instafeed({
           clientId: '404795e9bb394bf3bdfdf4e5684c908b',
@@ -82,29 +82,6 @@ $(function() {
       feed2.run();
     }
 
-  /*  var slideIndex = 0;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      copriInstaAppenaCaricato();
-      showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("slide");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex-1].style.display = "block";
-      }
-
-      function copriInstaAppenaCaricato(){
-        instafeed = document.getElementById('instafeed_all');
-        instafeed.children[1].style.display = 'none';
-      }*/
 
     $(window).scroll(function() {
         if($(this).scrollTop() != 0) {
