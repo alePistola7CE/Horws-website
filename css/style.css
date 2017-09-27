@@ -5838,7 +5838,7 @@ header {
     text-align: center; }
     @media screen and (min-width: 1200px) {
       header .titles {
-        bottom: 50%; } }
+        bottom: 60%; } }
   header h1, header h2 {
     width: 100%;
     color: #FFF;
@@ -6144,4 +6144,52 @@ footer {
     text-decoration: none;
     cursor: pointer; }
 
+.another {
+  margin: 0px auto 20px auto;
+  opacity: 0.7;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+
+.more {
+  border-radius: 0px;
+  border: 0px;
+  display: inline-block;
+  padding: 20px 50px;
+  margin: 15px auto auto auto;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: #2980b9;
+  color: #FFF;
+  text-decoration: none; }
+  .more:hover {
+    background-color: rgba(41, 128, 185, 0.9);
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer; }
+
+.not-allowed {
+  border-radius: 0px;
+  border: 0px;
+  display: inline-block;
+  padding: 20px 50px;
+  margin: 15px auto auto auto;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: #2980b9;
+  color: #FFF;
+  text-decoration: none; }
+  .not-allowed:hover {
+    background-color: rgba(41, 128, 185, 0.9);
+    color: #FFF;
+    text-decoration: none;
+    cursor: not-allowed; }
 /*# sourceMappingURL=style.css.map */
