@@ -432,8 +432,8 @@ footer {
 
 #top{
   img{
-    width:85px;
-    opacity: 0.75;
+    width:90px;
+    opacity: 0.80;
     &:hover{
       opacity: 1.0;
     }
@@ -445,6 +445,14 @@ footer {
   right:15px;
   cursor:pointer;
   display:none;
+
+  @media screen and(max-width: 500px){
+    img{
+      width: 70px;
+    }
+    bottom:10px;
+    right:10px;
+  }
 }
 
 //class for set null all of css

@@ -6139,10 +6139,16 @@ footer {
   cursor: pointer;
   display: none; }
   #top img {
-    width: 85px;
-    opacity: 0.75; }
+    width: 90px;
+    opacity: 0.80; }
     #top img:hover {
       opacity: 1.0; }
+  @media screen and (max-width: 500px) {
+    #top {
+      bottom: 10px;
+      right: 10px; }
+      #top img {
+        width: 70px; } }
 
 .nope {
   color: #FFF;
