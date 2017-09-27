@@ -1,7 +1,7 @@
 $(function() {
 
     //Set up instafeed
-    if (window.location.pathname == "/Horws-website/index.html" || window.location.pathname == "/Horws-website/"){
+    if (window.location.pathname == "/index.html" || window.location.pathname == "/"){
       console.log("dentro index");
       var feed = new Instafeed({
           clientId: '404795e9bb394bf3bdfdf4e5684c908b',
@@ -39,7 +39,7 @@ $(function() {
           }
       });
       feed.run();
-    } else if(window.location.pathname == "/Horws-website/photos.html"){
+    } else if(window.location.pathname == "/photos.html"){
       console.log("dentro photos");
       var feed2 = new Instafeed({
           clientId: '404795e9bb394bf3bdfdf4e5684c908b',

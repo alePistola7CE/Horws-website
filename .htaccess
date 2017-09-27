@@ -1,0 +1,5 @@
+# BEGIN HVCPanelModPageSpeed
+<IfModule mod_headers.c>
+</IfModule>
+# END HVCPanelModPageSpeed
+
