@@ -81,6 +81,17 @@ header {
         }
       }
 
+      .titles2 {
+          position: absolute;
+          bottom: 50%;
+          width: 100%;
+          text-align: center;
+
+          @media screen and (min-width: $screen-lg) {
+              bottom: 60%;
+          }
+        }
+
     h1, h2 {
         width: 100%;
         color: $white;
@@ -497,4 +508,14 @@ footer {
     text-decoration: none;
     cursor: not-allowed;
   }
+ }
+
+ .privacy {
+   color: $mediumgrey;
+   opacity: 0.87;
+   &:hover{
+     text-decoration: none;
+     color: $mediumgrey;
+     opacity: 1;
+   }
  }

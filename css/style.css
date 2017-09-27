@@ -5839,6 +5839,14 @@ header {
     @media screen and (min-width: 1200px) {
       header .titles {
         bottom: 60%; } }
+  header .titles2 {
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    text-align: center; }
+    @media screen and (min-width: 1200px) {
+      header .titles2 {
+        bottom: 60%; } }
   header h1, header h2 {
     width: 100%;
     color: #FFF;
@@ -6192,4 +6200,13 @@ footer {
     color: #FFF;
     text-decoration: none;
     cursor: not-allowed; }
+
+.privacy {
+  color: #9b9b9b;
+  opacity: 0.87; }
+  .privacy:hover {
+    text-decoration: none;
+    color: #9b9b9b;
+    opacity: 1; }
+
 /*# sourceMappingURL=style.css.map */
