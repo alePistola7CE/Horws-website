@@ -57,7 +57,7 @@ $(function() {
             var modalImg = document.getElementById("img01");
             var captionText = document.getElementById("caption");
             var instafeed = document.getElementById('instafeed_all');
-            for (i = 1; i < instafeed.childElementCount; i++) {
+            for (i = 0; i < instafeed.childElementCount; i++) {
               var div = instafeed.children[i];
               var photobox = div.children[0];
               var imagewrap = photobox.children[0];
