@@ -191,6 +191,7 @@ header {
 
 .row {
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 
 .instagram-content {
@@ -199,7 +200,7 @@ header {
     h3 {
         text-transform: uppercase;
         letter-spacing: 0.5em;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 700;
         text-align: center;
         padding: $padding*5 0;
@@ -526,5 +527,21 @@ footer {
      text-decoration: none;
      color: $mediumgrey;
      opacity: 1;
+   }
+ }
+
+ .descrizione{
+   letter-spacing: 0.065em;
+   line-height: 1.55em;
+   text-align: center;
+   margin: 5px auto 20px auto;
+   padding: 20px;
+   display: block;
+   word-spacing: 0.10em;
+   color: darken($lightgrey, 50%);
+   a {
+     &:hover{
+       text-decoration: none;
+     }
    }
  }
