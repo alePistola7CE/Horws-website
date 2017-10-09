@@ -1,7 +1,7 @@
 $(function() {
 
     //Set up instafeed
-    if (window.location.pathname == "/index.html" || window.location.pathname == "/"){
+    if (window.location.pathname == "/index.html" || window.location.pathname == "/" || window.location.pathname == "/Horws-website/"){
       var feed = new Instafeed({
           clientId: '404795e9bb394bf3bdfdf4e5684c908b',
           accessToken: '4506821562.404795e.21136a7408dd426d9e76d98e97b36e69',
@@ -38,7 +38,7 @@ $(function() {
           }
       });
       feed.run();
-    } else if(window.location.pathname == "/photos.html"){
+    } else if(window.location.pathname == "/photos.html" || window.location.pathname == "/Horws-website/photos.html"){
       var hashTags = new Array("canazei", "conero", "roma");
       var urls_canazei = new Array("images/canazei1.jpg", "images/canazei2.jpg", "images/canazei3.jpg");
       var descrizioni_canazei = new Array("Mostratemi un cuore non contaminato da folli sogni, e io vi mostrerò un uomo felice. Ma solo nei sogni gli uomini sono davvero felici, è da sempre così, e così sarà per sempre! -L'attimo fuggente-.", "When the sun comes up 🌄", "Dobbiamo solo avere la forza di riscoprire il nostro sole interiore..");
@@ -148,6 +148,8 @@ $(function() {
         aLink.href =  '#' + ids[i]; //ids[i] + ".html";
         aLink.innerHTML = titles[i];
         sMore.style.textAlign = 'right';
+        sMore.style.position = 'static';
+        sMore.style.marginRight = "20px";
         sMore.appendChild(aLink);
         divContenitoreFoto.appendChild(sMore);
 }

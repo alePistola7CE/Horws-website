@@ -5922,9 +5922,10 @@ header {
   font-weight: 700;
   text-align: center;
   padding: 50px 0;
-  color: #6f6f6f; }
+  color: #6f6f6f;
+  margin-top: 40px; }
 .instagram-content .photo-box {
-  margin: 0 0 40px 0;
+  margin: 0 0 50px 0;
   overflow: hidden; }
   @media screen and (min-width: 1200px) {
     .instagram-content .photo-box {
