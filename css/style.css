@@ -5915,6 +5915,10 @@ header {
   margin-bottom: 20px;
   margin-top: 50px; }
 
+div.row.first-page {
+  margin-top: 0px;
+  margin-bottom: 30px; }
+
 .instagram-content h3 {
   text-transform: uppercase;
   letter-spacing: 0.5em;
@@ -5923,7 +5927,10 @@ header {
   text-align: center;
   padding: 50px 0;
   color: #6f6f6f;
-  margin-top: 40px; }
+  margin-top: 30px; }
+.instagram-content h3.first-page {
+  padding: 45px 0;
+  margin-bottom: 50px; }
 .instagram-content .photo-box {
   margin: 0 0 50px 0;
   overflow: hidden; }
@@ -6229,5 +6236,4 @@ footer {
   color: #6f6f6f; }
   .descrizione a:hover {
     text-decoration: none; }
-
 /*# sourceMappingURL=style.css.map */
