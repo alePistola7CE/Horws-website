@@ -3,8 +3,8 @@ $(function() {
     //Set up instafeed
     if (window.location.pathname == "/index.html" || window.location.pathname == "/" || window.location.pathname == "/Horws-website/"){
       var feed = new Instafeed({
-          clientId: '404795e9bb394bf3bdfdf4e5684c908b',
-          accessToken: '4506821562.404795e.21136a7408dd426d9e76d98e97b36e69',
+          clientId: '404795xxxx394bf3bdfdfxxxx84c908b',
+          accessToken: '45068215xxxx04795e.21136a7408xxxx6d9e76d98e97b36e69',
           target: 'instafeed',
           get: 'tagged',
           tagName: '1',
