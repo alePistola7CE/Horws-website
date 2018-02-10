@@ -1,0 +1,559 @@
+/*
+* Custom variables
+*/
+$main-font: 'Lato', sans-serif;
+$sub-font: 'Montserrat', sans-serif;
+$fancy-font: 'Kaushan Script', cursive;
+$font-size: 16px;
+
+$black: #000;
+$white: #FFF;
+$grey: #585c65;
+$mediumgrey: #9b9b9b;
+$lightgrey: #eeeeee;
+$blue: #3466a1;
+
+$padding: 10px;
+$margin: 10px;
+
+/*
+* Override Bootstrap variables
+*/
+$font-family-sans-serif: $main-font;
+
+@import "bootstrap";
+
+
+
+
+* {
+    position: relative;
+    box-sizing: border-box;
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
+      overflow-x: hidden;
+    }
+}
+
+body {
+
+    color: $grey;
+    font-size: $font-size;
+
+}
+
+
+header {
+    max-height: 600px;
+    height: 600px;
+    overflow: hidden;
+
+    img {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+
+    @media screen and (min-width: $screen-lg) {
+        top: auto;
+        left: auto;
+        margin: 0;
+        width: 100%;
+        }
+    }
+
+    .name {
+        font-size: 30px;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        color: $white;
+    }
+
+    .titles {
+        position: absolute;
+        bottom: 40%;
+        width: 100%;
+        text-align: center;
+
+        @media screen and (min-width: $screen-lg) {
+            bottom: 60%;
+        }
+      }
+
+      .titles2 {
+          position: absolute;
+          bottom: 50%;
+          width: 100%;
+          text-align: center;
+
+          @media screen and (min-width: $screen-lg) {
+              bottom: 60%;
+          }
+        }
+
+    h1, h2 {
+        width: 100%;
+        color: $white;
+        margin: 0;
+    }
+
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.06em;
+        margin-bottom: $margin;
+
+        span {
+            display: block;
+
+            @media screen and (min-width: $screen-md) {
+                display: inline;
+                }
+            }
+         }
+
+    h2 {
+        font-size: 16px;
+        width: 70%;
+        margin: 0 auto;
+
+        @media screen and (min-width: $screen-lg) {
+            width: 100%;
+            margin: 0;
+            }
+         }
+
+
+         .social {
+               position: absolute;
+               top: 55px;
+               right: 50px;
+               overflow: hidden;
+
+               a {
+                   float: left;
+                   width: 40px;
+                   height: 40px;
+                   margin: 0 10px;
+                   text-indent: -9999px;
+                   background: url(../images/social-sprite.png) no-repeat;
+                   background-size: 120px 40px;
+                   opacity: 0.8;
+
+                   &:hover {
+                       opacity: 1.0;
+                   }
+
+                   &.instaram {
+                       background-position: 0px 0px;
+                   }
+
+                   &.foto {
+                       background-position: -40px 0px;
+                   }
+
+                   &.mail {
+                       background-position: -80px 0px;
+                   }
+               }
+               @media screen and (max-width: $screen-xs) {
+                 a{
+                   width: 30px;
+                   height: 30px;
+                   margin: 0px 7px;
+                   background-size: 90px 30px;
+
+                   &.instaram{
+                     background-position: 0px 0px;
+                   }
+                   &.foto{
+                     background-position: -30px 0px;
+                   }
+                   &.mail{
+                     background-position: -61px 0px;
+                   }
+                 }
+               }
+            }
+
+}
+
+.fancy-font {
+   font-family: $fancy-font;
+}
+
+.instagram-wrap {
+    background: $lightgrey;
+}
+
+.row {
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+div.row.first-page{
+  margin-top: 0px;
+  margin-bottom:30px;
+
+}
+
+.instagram-content {
+
+
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: 0.5em;
+        font-size: 13px;
+        font-weight: 700;
+        text-align: center;
+        padding: $padding*5 0;
+        color: darken($lightgrey, 50%);
+        margin-top: 30px;
+    }
+
+    h3.first-page{
+        padding: 45px 0;
+        margin-bottom: 50px;
+    }
+
+    .photo-box {
+        margin: 0 0 $margin*5 0;
+        overflow: hidden;
+
+        @media screen and (min-width: $screen-lg){
+        //width: 365px;
+        //height: 365px;
+        width: 370px;
+        height: 340px;
+        }
+
+        .image-wrap {
+
+            display: block;
+            overflow: hidden;
+            @media screen and (min-width: $screen-lg){
+            height: 80%;
+            }
+
+            img {
+                width: 100%;
+                height:100%;
+                display: block;
+            }
+
+            .likes {
+                position: absolute;
+                bottom: 5px;
+                left: 15px;
+                padding: $padding/2;
+                background: $black;
+                background: rgba($black, 0.4);
+                color: $white;
+            }
+        }
+        .description {
+            font-family: $sub-font;
+            font-size: 11px;
+            background: $white;
+            color: darken($mediumgrey, 20%);
+            letter-spacing: 0.8px;
+            padding: $padding*1.5;
+            @media screen and (min-width: $screen-lg){
+                height: 20%;
+            }
+            height: 75px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    .photo-box:hover{
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.17), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
+    }
+
+}
+
+div.image-wrap{
+  border: 10px solid rgb(255, 255, 255);
+}
+
+footer {
+    background: $white;
+    padding: $padding*3 0;
+    text-align: center;
+
+    @media screen and (min-width: $screen-lg) {
+        padding: $padding*10 0;
+    }
+
+    h4 {
+        font-size: 36px;
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .about-text {
+        padding: 0 $padding*3;
+
+        @media screen and (min-width: $screen-lg) {
+            width: 650px;
+            margin: 0 auto;
+        }
+    }
+
+    .contact-now-btn {
+        display: inline-block;
+        width: 70%;
+        padding: $padding*2 $padding*5;
+        margin-top: $margin*2;
+        color: $white;
+        background: $grey;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        @media screen and (min-width: $screen-md) {
+            width: 60%;
+        }
+
+        @media screen and (min-width: $screen-lg) {
+            width: 20%;
+            margin-top: $margin*5;
+        }
+
+        &:hover {
+            background: lighten($grey, 5%);
+        }
+    }
+}
+
+.footer-bottom {
+    background: $white;
+    padding: $padding $padding*6;
+    border-top: 2px solid $lightgrey;
+    letter-spacing: 2px;
+    text-align: center;
+    color: $mediumgrey;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $screen-md) {
+        padding: $padding*4 0;
+    }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 70px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 700px;
+    border: none;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    font-size: 14px;
+    font-family: $main-font;
+    display: block;
+    width: 80%;
+    max-width: 860px;
+    text-align: center;
+    color: $white;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.photo{
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: $main-font;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@keyframes scalaImmagine {
+  from {transform:scale(1,1);}
+    to {transform:scale(1.1,1.1);}
+}
+
+.photo:hover{
+  animation-name:scalaImmagine;
+	transform:scale(1.1,1.1);
+	animation-duration:1.3s;
+}
+
+#top{
+  img{
+    width:90px;
+    opacity: 0.80;
+    &:hover{
+      opacity: 1.0;
+    }
+  }
+  text-align:center;
+  padding:5px;
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  cursor:pointer;
+  display:none;
+
+  @media screen and(max-width: 500px){
+    img{
+      width: 70px;
+    }
+    bottom:10px;
+    right:10px;
+  }
+}
+
+//class for set null all of css
+.nope{
+  color: $white;
+  text-decoration: none;
+  &:hover{
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.another{
+  margin: 0px auto 20px auto;
+  opacity:0.7;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.more{
+  border-radius: 0px;
+  border: 0px;
+  display: inline-block;
+  padding: $padding*2 $padding*5;
+  margin: $margin+5px auto auto auto;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  background-color: rgba(41, 128, 185,1.0);
+  color: $white;
+  text-decoration: none;
+  &:hover{
+    background-color: rgba(41, 128, 185,0.9);
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.not-allowed {
+  border-radius: 0px;
+  border: 0px;
+  display: inline-block;
+  padding: $padding*2 $padding*5;
+  margin: $margin+5px auto auto auto;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $white;
+  background-color: rgba(41, 128, 185,1.0);
+  color: $white;
+  text-decoration: none;
+  &:hover{
+    background-color: rgba(41, 128, 185,0.9);
+    color: $white;
+    text-decoration: none;
+    cursor: not-allowed;
+  }
+ }
+
+ .privacy {
+   color: $mediumgrey;
+   opacity: 0.87;
+   &:hover{
+     text-decoration: none;
+     color: $mediumgrey;
+     opacity: 1;
+   }
+ }
+
+ .descrizione{
+   letter-spacing: 0.065em;
+   line-height: 1.55em;
+   text-align: center;
+   margin: 5px auto 20px auto;
+   padding: 20px;
+   display: block;
+   word-spacing: 0.10em;
+   color: darken($lightgrey, 50%);
+   a {
+     &:hover{
+       text-decoration: none;
+     }
+   }
+ }
