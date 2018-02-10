@@ -200,8 +200,19 @@ div.row.first-page{
 
 }
 
+.titleLink{
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .instagram-content {
 
+  padding-bottom: 20px;
+  border-bottom: 2px solid white;
+  text-decoration: none;
 
     h3 {
         text-transform: uppercase;
@@ -212,6 +223,13 @@ div.row.first-page{
         padding: $padding*5 0;
         color: darken($lightgrey, 50%);
         margin-top: 30px;
+
+        &:hover {
+          text-decoration: none;
+        }
+    }
+    h3.a{
+      text-decoration: none;
     }
 
     h3.first-page{

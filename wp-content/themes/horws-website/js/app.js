@@ -40,7 +40,7 @@ $(function() {
       feed.run();
     } else if(window.location.pathname == "/photos.html" || window.location.pathname == "/Horws-website/photos.html" ||  window.location.pathname == "/Horws-web/wordpress-horws/"){
         var hashTags = new Array("canazei", "conero", "roma");
-        var urls_canazei = new Array("../images/canazei1.jpg", "../images/canazei2.jpg", "../images/canazei3.jpg");
+        var urls_canazei = new Array("http://localhost/Horws-web/wordpress-horws/wp-content/uploads/2018/02/canazei1.jpg", "http://localhost/Horws-web/wordpress-horws/wp-content/uploads/2018/02/canazei2.jpg", "http://localhost/Horws-web/wordpress-horws/wp-content/uploads/2018/02/canazei3.jpg");
         var descrizioni_canazei = new Array("Mostratemi un cuore non contaminato da folli sogni, e io vi mostrerò un uomo felice. Ma solo nei sogni gli uomini sono davvero felici, è da sempre così, e così sarà per sempre! -L'attimo fuggente-.", "When the sun comes up 🌄", "Dobbiamo solo avere la forza di riscoprire il nostro sole interiore..");
         var descrizioni_sirolo = new Array("Spiral clouds", "HDR throught my vision", "Ma ti sbagli se pensi che le gioie della vita vengano soprattutto dai rapporti tra le persone. Dio ha messo la felicità dappertutto e ovunque, in tutto ciò in cui possiamo fare esperienza. Abbiamo solo bisogno di cambiare il modo di guardare le cose. (Christopher McCandless)");
         var descrizioni_roma = new Array("Scatto attraverso la serratura del portone del Priorato dei Cavalieri di Malta...sullo sfondo la cupola di San Pietro 👀📸", "Sono gli altri le strade, io sono una piazza, non porto in nessun posto, io sono un posto.(Alessandro Baricco)", '"When the gusts came around to blow me down I held on as tightly as you held onto me"');
@@ -49,8 +49,8 @@ $(function() {
         var luogo_roma = new Array("Piazza Cavalieri Di Malta", "Piazza Navona", "Villa Pamphili");
         var luoghi = new Array(luogo_canazei, luogo_sirolo, luogo_roma);
         var descrizioniFoto = new Array(descrizioni_canazei, descrizioni_sirolo, descrizioni_roma);
-        var urls_sirolo = new Array("../images/sirolo1.jpg", "../images/sirolo2.jpg", "../images/sirolo3.jpg");
-        var urls_roma = new Array("../images/roma1.jpg", "../images/roma2.jpg", "../images/roma3.jpg");
+        var urls_sirolo = new Array("http://localhost/Horws-web/wordpress-horws/wp-content/uploads/2018/02/sirolo1.jpg", "http://localhost/Horws-web/wordpress-horws/wp-content/uploads/2018/02/sirolo2.jpg", "http://localhost/Horws-web/wordpress-horws/wp-content/uploads/2018/02/sirolo3.jpg");
+        var urls_roma = new Array("http://localhost/Horws-web/wordpress-horws/wp-content/uploads/2018/02/roma1.jpg", "http://localhost/Horws-web/wordpress-horws/wp-content/uploads/2018/02/roma2.jpg", "http://localhost/Horws-web/wordpress-horws/wp-content/uploads/2018/02/roma3.jpg");
         var uris = new Array(urls_canazei, urls_sirolo, urls_roma);
         var titles = new Array("Canazei", "Riviera del conero", "Roma");
         var ids = new Array("Canazei", "Riviera-del-conero", "Roma");
@@ -112,7 +112,7 @@ $(function() {
           divImagewrap.appendChild(img);
           //icona gps
           iconGps = document.createElement('img');
-          iconGps.src = "images/gps.png";
+          iconGps.src = "http://localhost/Horws-web/wordpress-horws/wp-content/uploads/2018/02/gps.png";
           iconGps.style.width = '22px';
           iconGps.style.display = 'inline-block';
           iconGps.alt = "Gps, position";
