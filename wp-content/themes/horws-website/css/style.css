@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*
 * Custom variables
 */
@@ -5927,8 +5926,8 @@ div.row.first-page {
 
 .instagram-content {
   padding-bottom: 20px;
-  border-bottom: 2px solid white;
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-grid; }
   .instagram-content h3 {
     text-transform: uppercase;
     letter-spacing: 0.5em;
@@ -6250,4 +6249,5 @@ footer {
   color: #6f6f6f; }
   .descrizione a:hover {
     text-decoration: none; }
+
 /*# sourceMappingURL=style.css.map */
