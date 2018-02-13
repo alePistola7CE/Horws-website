@@ -38,7 +38,7 @@ $(function() {
           }
       });
       feed.run();
-    } else if(window.location.pathname == "/photos.html" || window.location.pathname == "/Horws-website/photos.html" ||  window.location.pathname == "/Horws-web/wordpress-horws/"){
+    } else {  //if(window.location.pathname == "/photos.html" || window.location.pathname == "/Horws-website/photos.html" ||  window.location.pathname == "/Horws-web/wordpress-horws/")
         var hashTags = new Array("canazei", "conero", "roma");
 
         //creazione immagini

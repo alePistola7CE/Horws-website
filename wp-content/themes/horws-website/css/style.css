@@ -5809,6 +5809,9 @@ body {
   color: #585c65;
   font-size: 16px; }
 
+a:hover {
+  text-decoration: none; }
+
 header {
   max-height: 600px;
   height: 600px;
@@ -6264,5 +6267,64 @@ footer {
   color: #6f6f6f; }
   .descrizione a:hover {
     text-decoration: none; }
+
+/* comment template */
+.commentlist {
+  margin-left: 20px;
+  list-style: none; }
+
+#comments {
+  text-align: center; }
+
+.avatar {
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+  margin-bottom: 5px; }
+
+.comment-meta {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 13px; }
+  .comment-meta:hover {
+    text-decoration: none;
+    color: inherit; }
+
+.logged-in-as {
+  text-align: center; }
+
+textarea#comment {
+  border-radius: 25px;
+  width: 350px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  margin-top: 20px; }
+
+label {
+  display: block;
+  text-align: center;
+  padding: 10px; }
+
+.submit {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  border: none;
+  background-color: white;
+  color: #585c65;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  margin-top: 25px; }
+  .submit:hover {
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
