@@ -5,7 +5,7 @@
   }
 
   if ( function_exists( 'add_image_size' ) ) {
-	    add_image_size( 'homepage-thumb', 350, 252 ); 
+	    add_image_size( 'homepage-thumb', 1172, 1080, true); 
 }
 
 ?>

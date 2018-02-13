@@ -5830,7 +5830,8 @@ header {
     position: absolute;
     top: 50px;
     left: 50px;
-    color: #FFF; }
+    color: #FFF;
+    overflow: hidden; }
   header .titles {
     position: absolute;
     bottom: 40%;
@@ -5843,7 +5844,8 @@ header {
     position: absolute;
     bottom: 50%;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
     @media screen and (min-width: 1200px) {
       header .titles2 {
         bottom: 60%; } }
@@ -5858,14 +5860,16 @@ header {
     letter-spacing: 0.06em;
     margin-bottom: 10px; }
     header h1 span {
-      display: block; }
+      display: block;
+      overflow: hidden; }
       @media screen and (min-width: 992px) {
         header h1 span {
           display: inline; } }
   header h2 {
     font-size: 16px;
     width: 70%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow: hidden; }
     @media screen and (min-width: 1200px) {
       header h2 {
         width: 100%;
@@ -5920,9 +5924,18 @@ div.row.first-page {
   margin-bottom: 30px; }
 
 .titleLink {
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  padding: 50px 0;
+  color: #6f6f6f;
+  margin-top: 30px; }
   .titleLink:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #3c3c3c; }
 
 .instagram-content {
   padding-bottom: 20px;
@@ -5936,7 +5949,8 @@ div.row.first-page {
     text-align: center;
     padding: 50px 0;
     color: #6f6f6f;
-    margin-top: 30px; }
+    margin-top: 30px;
+    overflow: hidden; }
     .instagram-content h3:hover {
       text-decoration: none; }
   .instagram-content h3.a {
@@ -6070,6 +6084,7 @@ footer {
   margin: auto;
   display: block;
   max-width: 700px;
+  max-height: 90%;
   border: none; }
 
 /* Caption of Modal Image */

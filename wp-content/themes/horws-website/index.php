@@ -8,7 +8,7 @@
   <div class="titles2">
     <h1>Hello! <span>I'm horws</span></h1>
     <h2>These are some photos taken during my travels</h2><br>
-    <h2><a class="nope" href=#Canazei>Canazei</a> - <a class="nope" href=#Riviera-del-conero>Riviera del conero</a> - <a class="nope" href=#Roma>Roma</a><h2>
+    <h2><span><a class="nope" href=#Canazei>Canazei</a></span> - <span><a class="nope" href=#Riviera-del-conero>Riviera del conero</a></span> - <span><a class="nope" href=#Roma>Roma</a></span><h2>
   </div>
   <div class="social">
     <a class="instagram" target="_blank" href="https://www.instagram.com/__horws/?hl=ithttps://www.instagram.com/__horws/?hl=it">Instagram</a>
@@ -33,9 +33,7 @@
         <?php if(have_posts()) : ?>
           <?php while(have_posts()) : the_post(); ?>
             <div class="instagram-content">
-              <a class="titleLink" href="<?php the_permalink(); ?>">
-                <h3><?php the_title(); ?></h3>
-              </a>
+                <h3><a class="titleLink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
               <span class="descrizione">
                 <?php the_excerpt(); ?>
               </span>
@@ -57,10 +55,20 @@
                           <div class="photo-box">
                             <div class="image-wrap">
                               <?php echo wp_get_attachment_image( $attachment->ID, "homepage-thumb", "", array( "class" => "photo" ) ); ?>
-                              <div class="likes">12 Likes</div>
+                              <div class="likes">
+                                <img src="http://localhost/Horws-web/wordpress-horws/wp-content/uploads/2018/02/gps.png" alt="Gps, position" style="width: 22px; display: inline-block;">
+                                <span><?php the_title(); ?></span>
+                              </div>
                             </div>
-                            <div class="description">descrizione
-                              <div class="date">04/01/2019</div>
+                            <div class="description"><?php echo get_post_meta( $attachment->ID,'_wp_attachment_image_alt', true); $meta = wp_get_attachment_metadata( $attachment->ID, true );
+                                  $prova = $meta['image_meta']; ?>
+                              <div class="date" style="margin-top: 3px;"><?php if(!$prova["credit"]) {
+                                $out = "Author Horws &copy;";
+                              } else {
+                                $out = "Author".$prova["credit"]."&copy;";
+                              }
+                               echo $out; ?>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -71,7 +79,7 @@
               </div>
 
               <div style="text-align: right; position: static; margin-right: 20px;">
-                See more about <a href="#<?php the_title(); ?>"><?php the_title(); ?></a>
+                See more about <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
               </div>
 
               </div>
