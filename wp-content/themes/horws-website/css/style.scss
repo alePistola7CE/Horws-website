@@ -636,12 +636,36 @@ footer {
    margin-right: auto;
    padding:10px;
    margin-top: 20px;
+   border: 1px solid lighten($mediumgrey, 20%);
+
  }
 
  label {
    display: block;
    text-align: center;
    padding: 10px;
+   font-weight: lighter;
+   color: $mediumgrey;
+   letter-spacing: 0.5em;
+   margin-top: 20px;
+ }
+
+ .comment-meta {
+   margin-left: 70px;
+   margin-top: -10px;
+ }
+
+ .comment-meta + p {
+   margin-left: 70px;
+ }
+
+ .comment-reply-link {
+   margin-left: 70px;
+   margin-top: -10px;
+ }
+
+ .fn {
+   margin-left: 10px;
  }
 
  .submit {
@@ -658,9 +682,54 @@ footer {
    padding-top: 10px;
    padding-bottom: 10px;
    font-size: 13px;
-   margin-top: 25px;
+   margin-top: 35px;
+   font-weight: lighter;
+   color: lighten($grey, 15%);
+   letter-spacing: 0.05em;
 
    &:hover{
      font-weight: bold;
+   }
+
+   &:focus{
+       outline: none;
+       box-shadow: 0px 0px 4px $blue;
+     }
+ }
+
+ .comment-notes {
+   display: block;
+   text-align: center;
+   padding: 10px;
+   font-weight: lighter;
+   color: lighten($grey, 15%);
+   letter-spacing: 0.1em;
+   margin-top: -25px;
+ }
+
+ .comment-form-url{
+   display: none;
+ }
+
+ #author, #email {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 25px;
+   border: 1px solid lighten($mediumgrey, 20%);
+ }
+
+ #author, #email, textarea#comment {
+   width: 350px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   &:hover{
+     border: 1px solid lighten($mediumgrey, 10%);
+   }
+   &:focus{
+     outline: none;
+     box-shadow: 0px 0px 4px $blue;
    }
  }
