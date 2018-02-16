@@ -23,15 +23,18 @@ $font-family-sans-serif: $main-font;
 
 @import "bootstrap";
 
-
-
-
 * {
     position: relative;
     box-sizing: border-box;
     @media only screen and (min-width: 320px) and (max-width: 480px) {
       overflow-x: hidden;
     }
+}
+
+ul {
+  font-size: 13px;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
 }
 
 body {
@@ -509,6 +512,9 @@ footer {
 .nope{
   color: $white;
   text-decoration: none;
+  overflow: visible;
+  padding: 4px;
+  z-index: 100;
   &:hover{
     color: $white;
     text-decoration: none;
@@ -612,6 +618,12 @@ footer {
     margin-bottom: 5px;
  }
 
+ p.comment-notes {
+   font-weight: lighter;
+   font-size: 13px;
+   letter-spacing: 0.18em;
+ }
+
  .comment-meta {
    font-style: italic;
    font-weight: lighter;
@@ -625,6 +637,11 @@ footer {
 
  .logged-in-as {
    text-align: center;
+   margin-top: -40px;
+   margin-bottom: 40px;
+   font-size: 13px;
+   font-weight: lighter;
+   letter-spacing: 0.1em;
  }
 
  textarea#comment {
@@ -732,4 +749,23 @@ footer {
      outline: none;
      box-shadow: 0px 0px 4px $blue;
    }
+ }
+
+ .widgets {
+   display: inline-flex;
+   margin-top: 40px;
+   margin-bottom: 40px;
+   padding:20px;
+ }
+
+ .sidebar-module {
+   float: left;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .widgettitle {
+   text-transform: uppercase;
+   letter-spacing: 0.2em;
+   font-size: 15px;
  }
