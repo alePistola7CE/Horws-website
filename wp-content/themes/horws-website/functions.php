@@ -25,6 +25,7 @@
 
 add_action('widgets_init', 'wpb_init_widgets');
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-formats', array('status') );
 
 
 ?>

@@ -1,7 +1,7 @@
 $(function() {
 
     //Set up instafeed
-    if (window.location.pathname == "/index.html" || window.location.pathname == "/" || window.location.pathname == "/Horws-website/"){
+    if (window.location.pathname == "/index.html" || window.location.pathname == "/" || window.location.pathname == "/Horws-web/wordpress-horws/"){
       var feed = new Instafeed({
           clientId: '404795e9bb394bf3bdfdf4e5684c908b',
           accessToken: '4506821562.404795e.21136a7408dd426d9e76d98e97b36e69',

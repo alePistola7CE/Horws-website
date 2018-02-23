@@ -13,7 +13,7 @@
       </div>
       <div class="social">
         <a class="instagram" target="_blank" href="https://www.instagram.com/__horws/?hl=ithttps://www.instagram.com/__horws/?hl=it">Instagram</a>
-        <a class="foto" href="<?php bloginfo('template_url'); ?>/photos.php">Foto</a>
+        <a class="foto" href="<?php bloginfo('template_url'); ?>/index.php">Foto</a>
         <a class="mail" href="#mail">Mail to</a>
       </div>
     </header>
