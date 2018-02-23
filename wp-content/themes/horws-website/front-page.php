@@ -1,11 +1,10 @@
 <?php get_header(); ?>
 
-<body>
   <!-- HEADERRRRRRR -->
     <header>
       <img src="<?php bloginfo('template_url'); ?>/images/mountains.jpg" alt="Mountains" style="opacity: 0.90;">
       <div class="name fancy-font">
-            <a class="nope" href="index.php">Horws</a>
+            <a class="nope" href="<?php echo get_home_url(); ?>">Horws</a>
       </div>
       <div class="titles">
         <h1>Hello! <span>I'm horws</span></h1>
@@ -13,7 +12,7 @@
       </div>
       <div class="social">
         <a class="instagram" target="_blank" href="https://www.instagram.com/__horws/?hl=ithttps://www.instagram.com/__horws/?hl=it">Instagram</a>
-        <a class="foto" href="<?php bloginfo('template_url'); ?>/index.php">Foto</a>
+        <a class="foto" href="articles/">Foto</a>
         <a class="mail" href="#mail">Mail to</a>
       </div>
     </header>

@@ -3,16 +3,16 @@
 <header>
   <img src="<?php bloginfo('template_url'); ?>/images/all.jpg" alt="Mountains" style="opacity: 0.90;">
   <div class="name fancy-font">
-        <a class="nope" href="<?php bloginfo('template_url'); ?>/index.php">Horws</a>
+        <a class="nope" href="<?php echo get_home_url(); ?>">Horws</a>
   </div>
   <div class="titles2">
     <h1>Hello! <span>I'm horws</span></h1>
     <h2>These are some photos taken during my travels</h2><br>
-    <h2><span><a class="nope" href=#Canazei>Canazei</a></span> - <span><a class="nope" href=#Riviera-del-conero>Riviera del conero</a></span> - <span><a class="nope" href=#Roma>Roma</a></span><h2>
+    <h2><span><a class="nope" href="canazei/">Canazei</a></span> - <span><a class="nope" href="sirolo/">Sirolo</a></span> - <span><a class="nope" href=roma/>Roma</a></span><h2>
   </div>
   <div class="social">
     <a class="instagram" target="_blank" href="https://www.instagram.com/__horws/?hl=ithttps://www.instagram.com/__horws/?hl=it">Instagram</a>
-    <a class="foto" href="<?php bloginfo('template_url'); ?>/photos.php">Foto</a>
+    <a class="foto" href="articles/">Foto</a>
     <a class="mail" href="#mail">Mail to</a>
   </div>
 </header>
