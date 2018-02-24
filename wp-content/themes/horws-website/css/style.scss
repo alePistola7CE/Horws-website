@@ -54,11 +54,11 @@ header {
     overflow: hidden;
 
     img {
-    position: fixed;
-    top: 0px;
-    left: 50%;
-    margin-left: -600px;
-    width: 1200px;
+      position: fixed;
+      top: 0px;
+      left: 50%;
+      margin-left: -600px;
+      width: 1200px;
 
     @media screen and (min-width: $screen-lg) {
         top: auto;
@@ -231,7 +231,8 @@ div.row.first-page{
 
   padding-bottom: 20px;
   text-decoration: none;
-  display: inline-grid;
+  display: flow-root;
+
 
     h3 {
         text-transform: uppercase;
@@ -679,6 +680,14 @@ footer {
  .comment-reply-link {
    margin-left: 70px;
    margin-top: -10px;
+ }
+
+ .comment-respond{
+   position: static;
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
  }
 
  .fn {

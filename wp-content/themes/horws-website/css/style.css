@@ -5953,7 +5953,7 @@ div.row.first-page {
 .instagram-content {
   padding-bottom: 20px;
   text-decoration: none;
-  display: inline-grid; }
+  display: flow-root; }
   .instagram-content h3 {
     text-transform: uppercase;
     letter-spacing: 0.5em;
@@ -6328,6 +6328,13 @@ label {
 .comment-reply-link {
   margin-left: 70px;
   margin-top: -10px; }
+
+.comment-respond {
+  position: static;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
 
 .fn {
   margin-left: 10px; }

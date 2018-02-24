@@ -51,7 +51,7 @@
     </div>
 
     <!--ricordati di fare il controllo sul post format in quanti gli widget vairano in base al post -->
-    <div class="widgets">
+    <div class="widgets col-xs-12">
       <?php if(is_active_sidebar('sidebar')): ?>
         <?php dynamic_sidebar('sidebar'); ?>
 
