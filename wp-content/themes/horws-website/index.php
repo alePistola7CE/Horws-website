@@ -11,7 +11,7 @@
     <h2><span><a class="nope" href="canazei/">Canazei</a></span> - <span><a class="nope" href="sirolo/">Sirolo</a></span> - <span><a class="nope" href=roma/>Roma</a></span><h2>
   </div>
   <div class="social">
-    <a class="instagram" target="_blank" href="https://www.instagram.com/__horws/?hl=ithttps://www.instagram.com/__horws/?hl=it">Instagram</a>
+    <a class="instagram" target="_blank" href="<?php echo get_theme_mod('showcase_link_insta', 'https://www.instagram.com/__horws/'); ?>">Instagram</a>
     <a class="foto" href="articles/">Foto</a>
     <a class="mail" href="#mail">Mail to</a>
   </div>

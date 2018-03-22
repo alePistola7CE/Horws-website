@@ -664,7 +664,7 @@ footer {
    padding: 10px;
    font-weight: lighter;
    color: $mediumgrey;
-   letter-spacing: 0.5em;
+   letter-spacing: 0.2em;
    margin-top: 20px;
  }
 
@@ -710,7 +710,7 @@ footer {
    font-size: 13px;
    margin-top: 35px;
    font-weight: lighter;
-   color: lighten($grey, 15%);
+   color: #9b9b9b;
    letter-spacing: 0.05em;
 
    &:hover{
@@ -746,9 +746,8 @@ footer {
  }
 
  #author, #email, textarea#comment {
-   width: 350px;
-   padding-left: 10px;
-   padding-right: 10px;
+   padding-left: 15px;
+   padding-right: 15px;
    padding-top: 3px;
    padding-bottom: 3px;
    &:hover{
@@ -778,3 +777,26 @@ footer {
    letter-spacing: 0.2em;
    font-size: 15px;
  }
+
+ ul.share-buttons{
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only{
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

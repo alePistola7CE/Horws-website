@@ -5,7 +5,7 @@
       <div class="col-xs-12">
         <h4>Get in touch</h4>
         <p class="about-text">I shoot, design, write and also study IT. Don't hesitate and get in touch with me if you need some creative work done. I always work to achieve my best and fulfil client needs</p>
-        <a id="mail" class="contact-now-btn" href="mailto:horws.photography@gmail.com">Contact Now</a>
+        <a id="mail" class="contact-now-btn" href="mailto:<?php echo get_theme_mod('showcase_email', '"horws.photography@gmail.com'); ?>">Contact Now</a>
       </div>
     </div>
   </div>

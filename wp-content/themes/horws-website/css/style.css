@@ -6315,7 +6315,7 @@ label {
   padding: 10px;
   font-weight: lighter;
   color: #9b9b9b;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.2em;
   margin-top: 20px; }
 
 .comment-meta {
@@ -6355,7 +6355,7 @@ label {
   font-size: 13px;
   margin-top: 35px;
   font-weight: lighter;
-  color: #7c828d;
+  color: #9b9b9b;
   letter-spacing: 0.05em; }
   .submit:hover {
     font-weight: bold; }
@@ -6383,9 +6383,8 @@ label {
   border: 1px solid #cecece; }
 
 #author, #email, textarea#comment {
-  width: 350px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 3px;
   padding-bottom: 3px; }
   #author:hover, #email:hover, textarea#comment:hover {
@@ -6409,5 +6408,25 @@ label {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 15px; }
+
+ul.share-buttons {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+
+ul.share-buttons li {
+  display: inline; }
+
+ul.share-buttons .sr-only {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */

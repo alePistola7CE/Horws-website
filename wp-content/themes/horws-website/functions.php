@@ -26,6 +26,16 @@
 add_action('widgets_init', 'wpb_init_widgets');
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'post-formats', array('status') );
+// enqueue font awesome
+add_action( 'wp_enqueue_scripts', 'prefix_enqueue_awesome' );
+function prefix_enqueue_awesome() {
+  wp_enqueue_style( 'prefix-font-awesome', '//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', array(), '4.1.0' );
+}
+
+
+
+//customizer file
+require get_template_directory(). '/inc/customizer.php';
 
 
 ?>
