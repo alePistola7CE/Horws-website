@@ -27,7 +27,6 @@ $font-family-sans-serif: $main-font;
     position: relative;
     box-sizing: border-box;
     @media only screen and (min-width: 320px) and (max-width: 480px) {
-      overflow-x: hidden;
     }
 }
 
@@ -79,24 +78,28 @@ header {
 
     .titles {
         position: absolute;
-        bottom: 40%;
+        bottom: 50%;
         width: 100%;
         text-align: center;
 
-        @media screen and (min-width: $screen-lg) {
+        @media screen and (min-width: $screen-md) and (min-width: 1000px) {
             bottom: 60%;
         }
       }
 
       .titles2 {
           position: absolute;
-          bottom: 50%;
+          bottom: 47%;
           width: 100%;
           text-align: center;
           overflow: hidden;
 
           @media screen and (min-width: $screen-lg) {
               bottom: 60%;
+          }
+
+          @media screen and (max-width: 480px){
+            bottom: 42%;
           }
         }
 
@@ -655,7 +658,9 @@ footer {
    padding:10px;
    margin-top: 20px;
    border: 1px solid lighten($mediumgrey, 20%);
-
+    @media screen and (max-width: 480px){
+      width: 300px;
+    }
  }
 
  label {
@@ -776,6 +781,9 @@ footer {
    text-transform: uppercase;
    letter-spacing: 0.2em;
    font-size: 15px;
+   @media screen and (max-width: 480px){
+    font-size: 13px;
+   }
  }
 
  ul.share-buttons{
@@ -784,6 +792,9 @@ footer {
   position: absolute;
   top: 10px;
   right: 10px;
+  @media screen and (max-width: 500px){
+    top: -25px;
+  }
 }
 
 ul.share-buttons li{
@@ -799,4 +810,66 @@ ul.share-buttons .sr-only{
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+.ico {
+  width: 100%;
+  margin: 0px;
+  @media screen and (min-width: $screen-md) and (min-width: 1000px) {
+    left: -5px;
+  }
+  @media screen and (max-width: 999px){
+    left: 13px;
+  }
+}
+
+.socialimg{
+  display: inline;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 5px;
+  left: -68px;
+  @media screen and (max-width: 480px){
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.socialimg2{
+  display: inline;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 5px;
+  @media screen and (max-width: 480px){
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.socialimg3{
+  display: inline;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  @media screen and (max-width: 480px){
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.socialContent{
+  @media screen and (max-width: 500px){
+    width: 26px;
+    height: 26px;
+  }
 }

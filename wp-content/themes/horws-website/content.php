@@ -4,9 +4,9 @@
       <h3><?php the_title(); ?></h3>
       <div style="text-align: left; position: static; margin-left: 20px; margin-top: -30px;">
         <ul class="share-buttons">
-          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhorws-photography.hostinggratis.it%2F&quote=Horws%20photography&t=<?php the_title(); ?>" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="<?php bloginfo('template_url'); ?>/images/simple_icons_black/Facebook.png" /></a></li>
-          <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fhorws-photography.hostinggratis.it%2F&text=Horws%20photography:%20http%3A%2F%2Fhorws-photography.hostinggratis.it%2F" target="_blank" title="Tweet"><img alt="Tweet" src="<?php bloginfo('template_url'); ?>/images/simple_icons_black/Twitter.png" /></a></li>
-          <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fhorws-photography.hostinggratis.it%2F" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="<?php bloginfo('template_url'); ?>/images/simple_icons_black/Google+.png" /></a></li>
+          <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fhorws-photography.hostinggratis.it%2F&quote=Horws%20photography&t=<?php the_title(); ?>" title="Share on Facebook" target="_blank"><img class="socialContent" alt="Share on Facebook" src="<?php bloginfo('template_url'); ?>/images/simple_icons_black/Facebook.png" /></a></li>
+          <li><a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Fhorws-photography.hostinggratis.it%2F&text=Horws%20photography:%20http%3A%2F%2Fhorws-photography.hostinggratis.it%2F" target="_blank" title="Tweet"><img class="socialContent" alt="Tweet" src="<?php bloginfo('template_url'); ?>/images/simple_icons_black/Twitter.png" /></a></li>
+          <li><a href="https://plus.google.com/share?url=http%3A%2F%2Fhorws-photography.hostinggratis.it%2F" target="_blank" title="Share on Google+"><img class="socialContent" alt="Share on Google+" src="<?php bloginfo('template_url'); ?>/images/simple_icons_black/Google+.png" /></a></li>
         </ul>
       </div>
     <span class="descrizione">

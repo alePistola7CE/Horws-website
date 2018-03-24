@@ -5806,9 +5806,6 @@ button.close {
 * {
   position: relative;
   box-sizing: border-box; }
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
-    * {
-      overflow-x: hidden; } }
 
 ul {
   font-size: 13px;
@@ -5847,21 +5844,24 @@ header {
     overflow: hidden; }
   header .titles {
     position: absolute;
-    bottom: 40%;
+    bottom: 50%;
     width: 100%;
     text-align: center; }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 992px) and (min-width: 1000px) {
       header .titles {
         bottom: 60%; } }
   header .titles2 {
     position: absolute;
-    bottom: 50%;
+    bottom: 47%;
     width: 100%;
     text-align: center;
     overflow: hidden; }
     @media screen and (min-width: 1200px) {
       header .titles2 {
         bottom: 60%; } }
+    @media screen and (max-width: 480px) {
+      header .titles2 {
+        bottom: 42%; } }
   header h1, header h2 {
     width: 100%;
     color: #FFF;
@@ -6308,6 +6308,9 @@ textarea#comment {
   padding: 10px;
   margin-top: 20px;
   border: 1px solid #cecece; }
+  @media screen and (max-width: 480px) {
+    textarea#comment {
+      width: 300px; } }
 
 label {
   display: block;
@@ -6408,6 +6411,9 @@ label {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 15px; }
+  @media screen and (max-width: 480px) {
+    .widgettitle {
+      font-size: 13px; } }
 
 ul.share-buttons {
   list-style: none;
@@ -6415,6 +6421,9 @@ ul.share-buttons {
   position: absolute;
   top: 10px;
   right: 10px; }
+  @media screen and (max-width: 500px) {
+    ul.share-buttons {
+      top: -25px; } }
 
 ul.share-buttons li {
   display: inline; }
@@ -6428,5 +6437,61 @@ ul.share-buttons .sr-only {
   height: 1px;
   width: 1px;
   overflow: hidden; }
+
+.ico {
+  width: 100%;
+  margin: 0px; }
+  @media screen and (min-width: 992px) and (min-width: 1000px) {
+    .ico {
+      left: -5px; } }
+  @media screen and (max-width: 999px) {
+    .ico {
+      left: 13px; } }
+
+.socialimg {
+  display: inline;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 5px;
+  left: -68px; }
+  @media screen and (max-width: 480px) {
+    .socialimg {
+      width: 26px;
+      height: 26px; } }
+
+.socialimg2 {
+  display: inline;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 5px; }
+  @media screen and (max-width: 480px) {
+    .socialimg2 {
+      width: 26px;
+      height: 26px; } }
+
+.socialimg3 {
+  display: inline;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 5px;
+  left: -33px; }
+  @media screen and (max-width: 480px) {
+    .socialimg3 {
+      width: 26px;
+      height: 26px; } }
+
+@media screen and (max-width: 500px) {
+  .socialContent {
+    width: 26px;
+    height: 26px; } }
 
 /*# sourceMappingURL=style.css.map */
